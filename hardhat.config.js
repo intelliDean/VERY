@@ -17,24 +17,11 @@ module.exports = {
     },
 
     networks: {
-        base: {
-            url: vars.get("BASE_URL"),
-            accounts: [`0x${vars.get("PRIVATE_KEY")}`]
-        },
-        fuji: {
-            url: "https://api.avax-test.network/ext/bc/C/rpc",
-            // gasPrice: 225000000000,
-            // chainId: 43113,
-            accounts: [`0x${vars.get("PRIVATE_KEY")}`]
-        },
         very: {
             url: "https://rpc.verylabs.io",
             chainId: 4613,
             accounts: [`0x${vars.get("PRIVATE_KEY")}`]
         }
-    },
-    etherscan: {
-        apiKey: vars.get("BASE_SCAN_API")
     },
     paths: {
         sources: "./contracts",
